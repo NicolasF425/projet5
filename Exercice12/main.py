@@ -18,28 +18,23 @@ class Library:
         for book in self.books:
             if book.title.lower() == book_title.lower():
                 self.books.remove(book)
+                break
 
     def borrow_book(self, book_title):
         for book in self.books:
             if book.title.lower() == book_title.lower():
                 self.borrow_books.append(book)
+                break
 
     def return_book(self, book_title):
         for book in self.borrow_books:
             if book.title.lower() == book_title.lower():
                 self.borrow_books.remove(book)
                 self.books.append(book)
+                break
 
     def available_books(self):
-        titles = []
-        if self.books:
-            for book in self.books:
-                titles.append(book.title)
-        return titles
+        return [book.title for book in self.books]
 
     def borrowed_books(self):
-        titles = []
-        if self.borrow_books:
-            for book in self.borrow_books:
-                titles.append(book.title)
-        return titles
+        return [book.title for book in self.borrow_books]

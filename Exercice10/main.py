@@ -15,7 +15,7 @@ class Employee(Person):
 
     def display_details(self):
         super().display_details()
-        print(f"age: {self.salary}")
+        print(f"salary: {self.salary}")
 
 
 person = Person("Toto", 20)

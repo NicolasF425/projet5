@@ -4,7 +4,7 @@ class Rectangle:
         self.length = length
 
     def calculate_area(self):
-        return (self.width*self.length)
+        return self.width*self.length
 
     def calculate_perimeter(self):
         return 2*(self.width+self.length)

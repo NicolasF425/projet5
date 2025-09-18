@@ -8,8 +8,10 @@ class BankAccount:
             self.balance += amount
 
     def withdraw(self, amount=0.0):
-        if amount >= self.balance:
+        if amount <= self.balance:
             self.balance -= amount
+        else:
+            print("Insufficient balance !")
 
     def display_balance(self):
         print("Account holder: ", self.account_holder)
@@ -17,4 +19,8 @@ class BankAccount:
 
 
 bank_account = BankAccount("Toto", 2000.0)
+bank_account.display_balance()
+bank_account.deposit(500.0)
+bank_account.withdraw(3000.0)
+bank_account.withdraw(800.0)
 bank_account.display_balance()

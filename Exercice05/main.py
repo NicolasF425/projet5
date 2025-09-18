@@ -1,5 +1,6 @@
 def sum(a, b):
-    """ Calculate the sum of of a and b.
+    """
+    Calculate the sum of a and b.
 
     Args:
         a (int or float): a number
@@ -12,10 +13,11 @@ def sum(a, b):
 
 
 def subtraction(a, b):
-    """ Return the substract of b from a.
+    """
+    Return the substract of b from a.
 
     Args:
-        a (int orfloat): a number
+        a (int or float): a number
         b (int or float): a number
 
     Returns:

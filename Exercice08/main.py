@@ -1,9 +1,8 @@
 def log_decorator(func):
     def wrapper():
         print("Avant la fonction\n")
-        result = func()
+        func()
         print("\nAprès la fonction")
-        return result
     return wrapper
 
 
